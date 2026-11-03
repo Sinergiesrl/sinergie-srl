@@ -1,0 +1,10 @@
+/* Schede di collegamento a siti professionali indipendenti. */
+.professional-links { display:grid; gap:1rem; margin:1.5rem 0; }
+.professional-link { display:flex; align-items:center; justify-content:space-between; gap:1.5rem; flex-wrap:wrap; padding:1.6rem; border:1px solid #d4dce4; border-left:4px solid #c39a57; border-radius:14px; background:#fff; box-shadow:0 12px 30px rgba(9,28,48,.06); }
+.professional-link h3 { margin:.3rem 0; color:#091c30; font-size:1.35rem; }
+.professional-link p { margin:.25rem 0; }
+.professional-category { color:#8a6228; font-size:.88rem; font-weight:700; letter-spacing:.025em; }
+.professional-link .network-button { display:inline-flex; align-items:center; justify-content:center; min-height:48px; text-align:center; text-decoration:none; background:#091c30; color:#fff; border:2px solid #091c30; border-radius:9px; padding:.75rem 1.1rem; font-weight:700; }
+.professional-link .network-button:hover, .professional-link .network-button:focus-visible { background:#e5bb72; color:#091c30; border-color:#a77b37; }
+.professional-link .network-button:focus-visible { outline:3px solid #326caa; outline-offset:3px; }
+@media(max-width:640px){.professional-link{align-items:stretch}.professional-link .network-button{width:100%;}}

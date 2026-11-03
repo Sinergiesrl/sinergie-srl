@@ -1,0 +1,14 @@
+/* SINERGIE · Sistema di dettaglio per il network professionale */
+:root{--sin-navy:#091c30;--sin-gold:#e5bb72;--sin-blue:#19334d}
+.network-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem;margin:2rem 0}
+.network-grid article,.contact-box{border:1px solid #d9e1e9;border-radius:16px;padding:1.5rem;background:#fff;box-shadow:0 8px 24px rgba(9,28,48,.06)}
+.network-grid h3{color:var(--sin-navy);margin-top:0}.network-grid p{line-height:1.7}
+#candidatura .contact-select{display:block;width:100%;padding:1rem;margin:1rem 0;border:2px solid var(--sin-blue);border-radius:9px;background:#fff;color:var(--sin-navy);font:inherit}
+#candidatura .privacy-acknowledgement{padding:1rem;margin:1.2rem 0;background:#f5f7f8;border:1px solid #9baab9;border-radius:10px}
+#candidatura .privacy-check-label{display:flex;gap:.75rem;align-items:flex-start;line-height:1.55}
+#candidatura input[type=checkbox]{width:22px;height:22px;flex-shrink:0;accent-color:var(--sin-navy)}
+#candidatura .privacy-error{color:#922b35;font-weight:700}
+.site-header .nav-links a{opacity:1!important;text-shadow:none!important}
+.site-header .nav-links a:focus-visible,.btn:focus-visible{outline:3px solid var(--sin-gold)!important;outline-offset:3px}
+@media(max-width:850px){.network-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.network-grid{grid-template-columns:1fr}}

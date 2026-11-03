@@ -1,0 +1,13 @@
+/* Network: navigazione istituzionale coerente e accessibile. */
+.site-header .header-inner { width: min(100% - 32px, 1280px); margin-inline: auto; }
+.site-header .brand img { max-width: 100%; height: auto; }
+.site-header .nav-links a[href="network-professionale.html"][aria-current="page"] { box-shadow: inset 0 -3px 0 #b58b47; }
+.network-intro { padding-top: clamp(56px, 8vw, 110px); }
+.network-section h2 { color: #091c30; }
+.professional-link { border: 1px solid #dbe2e8; border-radius: 18px; background: #fff; box-shadow: 0 14px 40px rgba(9,28,48,.06); }
+@media (max-width: 1000px) {
+  .site-header .menu-toggle { display: flex; align-items: center; justify-content: center; }
+  .site-header .nav-links:not(.open) { display: none; }
+  .site-header .nav-links.open { display: flex; }
+}
+@media (max-width: 640px) { .network-shell { padding-inline: 20px; } }

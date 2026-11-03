@@ -1,0 +1,13 @@
+SINERGIE SRL - PUBBLICAZIONE GITHUB PAGES
+
+1. Estrarre questo ZIP sul computer.
+2. Aprire il repository Sinergiesrl/sinergie-srl su GitHub.
+3. Add file > Upload files.
+4. Caricare IL CONTENUTO della cartella estratta (index.html, file CSS, JS, immagini e cartelle profilo-...), non lo ZIP.
+5. Commit changes.
+6. Settings > Pages > Build and deployment > Deploy from a branch > main > /(root) > Save.
+7. Aprire https://sinergiesrl.github.io/sinergie-srl/ dopo la pubblicazione.
+
+La homepage e index.html nella radice, non una pagina di selezione.
+Il vecchio repository sito-sinergie non viene modificato.
+Prima della pubblicazione verificare contenuti, autorizzazioni alle foto, privacy e link.

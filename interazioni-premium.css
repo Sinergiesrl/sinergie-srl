@@ -1,0 +1,18 @@
+/* SINERGIE — interazioni premium unificate, 2026 */
+:root { --interactive-navy: #102a43; --interactive-gold: #d6af70; --interactive-gold-hover: #f0ce91; }
+.nav-links a, .site-header nav a { transition: color .22s ease, text-decoration-color .22s ease; }
+.nav-links a:hover, .site-header nav a:hover { color: var(--interactive-gold-hover); }
+.nav-links a:active, .site-header nav a:active { color: #fff0cf; }
+.nav-links a[aria-current="page"], .site-header nav a[aria-current="page"] { color: var(--interactive-gold); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 7px; }
+/* CTA: niente nero; blu notte e oro champagne con contrasto elevato */
+a.btn, button.btn, .btn-dark, a.btn-dark, button.btn-dark, .btn-primary, a.btn-primary, button.btn-primary, a.btn-gold, button.btn-gold, .header-cta { background: var(--interactive-navy); color: #fff; border: 1px solid var(--interactive-navy); transition: background-color .24s ease, color .24s ease, border-color .24s ease, transform .24s ease; }
+a.btn:hover, button.btn:hover, .btn-dark:hover, a.btn-dark:hover, button.btn-dark:hover, .btn-primary:hover, a.btn-primary:hover, button.btn-primary:hover, a.btn-gold:hover, button.btn-gold:hover, .header-cta:hover { background: var(--interactive-gold); color: var(--interactive-navy); border-color: var(--interactive-gold); }
+a.btn:active, button.btn:active, .btn-dark:active, .btn-primary:active, .btn-gold:active, .header-cta:active { background: #c59b59; color: var(--interactive-navy); border-color: #c59b59; transform: translateY(0); }
+/* CTA secondarie: bordo champagne, nessun riempimento nero */
+a.btn-outline, button.btn-outline, a.btn-secondary, button.btn-secondary { background: transparent; color: var(--interactive-navy); border: 1px solid #a87b3b; }
+a.btn-outline:hover, button.btn-outline:hover, a.btn-secondary:hover, button.btn-secondary:hover { background: var(--interactive-gold); color: var(--interactive-navy); border-color: var(--interactive-gold); }
+/* Su fondo scuro i pulsanti secondari devono restare leggibili */
+.hero a.btn-outline, .hero button.btn-outline, .site-header a.btn-outline, .network-intro a.btn-outline { color: #fff; border-color: var(--interactive-gold); }
+.hero a.btn-outline:hover, .site-header a.btn-outline:hover, .network-intro a.btn-outline:hover { color: var(--interactive-navy); }
+a:focus-visible, button:focus-visible, input:focus-visible { outline: 3px solid var(--interactive-gold); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { .nav-links a, .site-header nav a, a.btn, button.btn, .btn-dark, .btn-primary, .btn-gold, .header-cta { transition: none; transform: none; } }

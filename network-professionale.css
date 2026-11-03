@@ -1,0 +1,43 @@
+/* Network Sinergie: componenti isolati, responsive, senza dipendenze esterne. */
+.network-intro{padding:clamp(48px,7vw,92px) 0;background:#091c30;color:white}.network-intro h1{color:#fff;font-size:clamp(2.1rem,5vw,4rem);max-width:850px;line-height:1.12}.network-intro p{color:#e3e9ef;max-width:750px;font-size:1.1rem}.network-eyebrow{color:#e5bb72!important;text-transform:uppercase;letter-spacing:.13em;font-weight:750;font-size:.8rem!important}.network-shell{max-width:1100px;margin:auto;padding:0 22px}.network-section{padding:clamp(40px,6vw,76px) 0}.network-card{display:grid;grid-template-columns:minmax(170px,250px) 1fr;gap:clamp(20px,4vw,42px);padding:26px;background:#fff;border:1px solid #dce4eb;border-radius:20px;box-shadow:0 18px 48px rgba(9,28,48,.07);align-items:center}.network-card img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:13px}.network-card h2{margin:0 0 12px;color:#091c30;font-size:clamp(1.5rem,3vw,2.1rem)}.network-tags{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}.network-tags span{background:#f0f3f6;color:#243b50;padding:7px 11px;border-radius:50px;font-size:.85rem}.network-button{display:inline-block;background:#e5bb72;color:#ffffff;font-weight:800;padding:14px 19px;border-radius:9px;text-decoration:none!important}.network-button:hover,.network-button:focus-visible{background:#f5d699;outline:3px solid #416b9b;outline-offset:3px}.network-note{background:#f2f5f8;padding:20px 24px;border-left:4px solid #b68b45;border-radius:7px;line-height:1.7}.network-muted{color:#46596b}.network-back{color:#e5bb72!important;text-decoration:underline!important}@media(max-width:670px){.network-card{grid-template-columns:1fr}.network-card img{max-width:240px}}
+
+
+/* CORREZIONE CONTRASTO PREMIUM — link ai profili professionali */
+/* Lo stato normale e hover hanno colori espliciti per evitare testo invisibile. */
+.network-section a.network-button,
+.professional-link a.network-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .55rem;
+    background-color: #102a43;
+    border: 2px solid #102a43;
+    color: #ffffff !important;
+    font-weight: 750;
+    line-height: 1.45;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .22s ease, border-color .22s ease, color .22s ease;
+}
+.network-section a.network-button:hover,
+.professional-link a.network-button:hover,
+.network-section a.network-button:focus-visible,
+.professional-link a.network-button:focus-visible {
+    background-color: #e5bb72;
+    border-color: #e5bb72;
+    color: #091c30 !important;
+}
+.network-section a.network-button:active,
+.professional-link a.network-button:active {
+    background-color: #c99f60;
+    border-color: #c99f60;
+    color: #091c30 !important;
+}
+.network-section a.network-button:focus-visible,
+.professional-link a.network-button:focus-visible {
+    outline: 3px solid #3a70a3;
+    outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+    .network-section a.network-button, .professional-link a.network-button { transition: none; }
+}
