@@ -1,0 +1,3 @@
+1. Estrai tutto lo ZIP.
+2. Apri ARTURO_RINALDI_PAGINA_AGGIORNATA.html con il browser per leggere il codice/pagina.
+3. Per aggiornare il sito GitHub sostituisci profilo-arturo-rinaldi/index.html con il file nella cartella omonima.
