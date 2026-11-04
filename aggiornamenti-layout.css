@@ -1,0 +1,20 @@
+/* Migliorie novembre 2026: homepage, immagine citazione, navigazione contatti */
+.home-hero { min-height: min(650px, calc(100svh - 86px)) !important; align-items: flex-start; }
+.home-hero-in { padding-top: clamp(40px, 6vh, 75px) !important; padding-bottom: 45px !important; }
+.home-hero h1 { font-size: clamp(2.5rem, 4.5vw, 4.2rem) !important; line-height: 1.12 !important; margin-bottom: 16px; }
+.home-hero p { line-height: 1.55 !important; margin-bottom: 14px; }
+.home-hero .eyebrow { margin-bottom: 14px; }
+.home-hero .hero-buttons { margin-top: 22px; }
+.quote-panel { background: linear-gradient(90deg,rgba(7,25,39,.84),rgba(7,25,39,.52)),url('foto.jpg') center / cover no-repeat !important; }
+.quote-panel blockquote { text-shadow: 0 2px 8px rgba(0,0,0,.45); }
+#richiesta { scroll-margin-top: 105px; }
+@media (max-width: 760px) {
+ .home-hero { min-height: 0 !important; }
+ .home-hero-in { padding-top: 45px !important; padding-bottom: 45px !important; }
+ .home-hero h1 { font-size: clamp(2rem, 7.8vw, 3.25rem) !important; }
+ .home-hero p { font-size: 1rem !important; line-height: 1.5 !important; }
+ .home-hero .hero-buttons { margin-top: 18px; }
+ .quote-panel { background-image: linear-gradient(90deg,rgba(7,25,39,.87),rgba(7,25,39,.58)),url('foto.jpg') !important; }
+ #richiesta { scroll-margin-top: 80px; }
+}
+@media (max-width: 380px) { .home-hero h1 { font-size: 1.9rem !important; } }

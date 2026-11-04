@@ -1,0 +1,35 @@
+
+/* Revisione fotografica e accessibilita visiva – novembre 2026 */
+:root{--gold:#b58a4e}
+.header nav a{font-size:.94rem;color:#243747;font-weight:750}
+.header nav a[aria-current],.header nav a:hover{color:#73511f}
+.header-cta{font-size:.94rem}
+.eyebrow{font-size:.88rem;letter-spacing:.095em;color:#795724;font-weight:800}
+.home-hero{background:linear-gradient(90deg,rgba(6,24,39,.93) 0%,rgba(9,31,49,.84) 42%,rgba(9,31,49,.43) 100%),url('foto.jpg') center center / cover no-repeat !important;min-height:650px}
+.home-hero:after{display:none}
+.home-hero .eyebrow{color:#f4d59b;font-size:.91rem;text-shadow:0 1px 4px #071624}
+.home-hero h1{color:#fff;text-shadow:0 2px 14px #06192a60;max-width:900px}
+.home-hero p{color:#fff;font-size:clamp(1.12rem,1.55vw,1.28rem);line-height:1.7;max-width:740px;text-shadow:0 1px 7px #06192a8a}
+.home-hero .button{background:#f0c783;color:#17283b;font-size:1rem}
+.home-hero .button-ghost{background:#122e4780;color:#fff;border:2px solid #fff}
+.section-head p,.split>div>p,.card p,.service-link span,.decision-grid p{color:#405565;font-size:1.03rem;line-height:1.7}
+.card-num,.service-link small,.decision-grid article>span{color:#795724}
+.quote-panel{background:linear-gradient(90deg,#071d32ed,#092c47bb),url('foto-chi-siamo.jpg') center/cover;min-height:270px;display:flex;flex-direction:column;justify-content:center}
+.quote-panel .eyebrow{color:#f4d59b}
+.quote-panel blockquote{color:#fff;text-shadow:0 1px 8px #0007}
+/* Immagini reali nelle schede servizi, mantenendo leggibilita */
+.link-grid .service-link{background-size:cover;background-position:center;min-height:285px;justify-content:flex-end;isolation:isolate;overflow:hidden;border:0;box-shadow:0 10px 25px #0d2b3b1c}
+.link-grid .service-link:before{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#071c2ff5 0%,#09263cdb 58%,#0c2a425c 100%);z-index:-1}
+.link-grid .service-link:nth-child(1){background-image:url('foto-fractional-management.jpg')}
+.link-grid .service-link:nth-child(2){background-image:url('foto-contabilita-paghe.jpg')}
+.link-grid .service-link:nth-child(3){background-image:url('foto-budget-personale.jpg')}
+.link-grid .service-link:nth-child(4){background-image:url('foto-relazioni-industriali.jpg')}
+.link-grid .service-link:nth-child(5){background-image:url('foto-legale.jpg')}
+.link-grid .service-link:nth-child(6){background-image:url('foto-mediazione.jpg')}
+.link-grid .service-link small{color:#f3d59e;font-size:.83rem;letter-spacing:.06em}
+.link-grid .service-link strong{color:#fff;font-size:1.3rem}
+.link-grid .service-link span{color:#f1f5f8;font-size:1rem;line-height:1.55}
+.link-grid .service-link b{color:#f5d39b}
+.cta .eyebrow{color:#f5d59e}
+.page-hero .eyebrow{color:#795724}
+@media(max-width:760px){.home-hero{background:linear-gradient(90deg,#071b2fe8,#09263cc9),url('foto.jpg') 60% center/cover no-repeat !important;min-height:590px}.home-hero h1{font-size:clamp(2.3rem,8.8vw,3.7rem)}.home-hero .eyebrow{font-size:.78rem}.link-grid .service-link{min-height:260px}}

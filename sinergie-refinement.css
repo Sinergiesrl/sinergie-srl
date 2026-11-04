@@ -1,0 +1,42 @@
+/* Sinergie Premium — rifiniture accessibilita, mobile e leggibilita (2026-11) */
+:root { --brand-gold-action: #e9b85e; --brand-navy-contrast: #10263c; }
+body { overflow-wrap: break-word; }
+img { max-width: 100%; }
+.header nav a { padding-block: 9px; }
+.header nav a[aria-current="page"] { text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 8px; }
+.button, .header-cta { min-height: 46px; background: var(--brand-gold-action) !important; color: var(--brand-navy-contrast) !important; border-color: var(--brand-gold-action) !important; }
+.button:hover, .header-cta:hover { background: #f3c977 !important; color: #10263c !important; }
+.button-ghost { background: rgba(8,27,43,.48) !important; color: #fff !important; border: 2px solid rgba(255,255,255,.95) !important; }
+.button-ghost:hover { background: rgba(8,27,43,.72) !important; color: #fff !important; }
+.button-light { background: #fff !important; color: #10263c !important; border-color: #fff !important; }
+.button-light:hover { background: #f9edd7 !important; color: #10263c !important; }
+.home-hero { background-image: linear-gradient(90deg,rgba(6,22,36,.88) 0%,rgba(6,22,36,.65) 42%,rgba(6,22,36,.18) 100%),url('foto.jpg') !important; background-position: center 45% !important; }
+.home-hero h1, .home-hero p { text-wrap: pretty; }
+.home-hero .eyebrow, .cta .eyebrow, .quote-panel .eyebrow { color: #ffe1a1 !important; }
+.section-head p, .split > div > p, .card p, .decision-grid p, .page-hero .lead { color: #344c5c; }
+.link-grid .service-link:before { background: linear-gradient(0deg,rgba(5,22,35,.94) 0%,rgba(5,22,35,.79) 47%,rgba(5,22,35,.13) 100%); }
+.link-grid .service-link strong, .link-grid .service-link span { color: #fff !important; }
+body.network-portraits .link-grid .service-link[href="profilo-serena-salvadori/index.html"] { background-image: url('profilo-serena-salvadori/ritratto.jpg') !important; }
+body.network-portraits .link-grid .service-link[href="profilo-pietro-fazio/index.html"] { background-image: url('profilo-pietro-fazio/pietro-fazio.jpg') !important; }
+body.network-portraits .link-grid .service-link:before { background: linear-gradient(0deg,rgba(5,22,35,.94) 0%,rgba(5,22,35,.70) 35%,rgba(5,22,35,.03) 78%) !important; }
+:where(a,button,input,select,textarea):focus-visible { outline: 3px solid #bd7b0d !important; outline-offset: 3px; }
+@media (max-width: 1050px) { .header nav a { font-size: .86rem; } }
+@media (max-width: 760px) {
+  .container { width: min(100% - 36px, 1180px); }
+  .header-in { min-height: 72px; }
+  .nav-toggle { min-height: 44px; min-width: 74px; }
+  .header nav { max-height: calc(100dvh - 72px); overflow-y: auto; overscroll-behavior: contain; }
+  .header nav a { display: block; min-height: 44px; font-size: 1.04rem; padding: 9px 0; }
+  .home-hero { min-height: 570px; background-image: linear-gradient(90deg,rgba(6,22,36,.88),rgba(6,22,36,.55)),url('foto.jpg') !important; background-position: 59% center !important; }
+  .home-hero-in { padding-block: 70px; }
+  .home-hero h1 { font-size: clamp(2.15rem, 8.2vw, 3.65rem); }
+  .home-hero p { font-size: 1.06rem; line-height: 1.7; }
+  .hero-buttons { flex-direction: column; align-items: stretch; }
+  .hero-buttons .button { text-align: center; }
+  .page-hero h1 { overflow-wrap: normal; hyphens: auto; }
+  .link-grid .service-link { min-height: 310px; }
+  .cta-in .button { width: 100%; }
+  .section { padding-block: 60px; }
+}
+@media (max-width: 380px) { .container { width: calc(100% - 28px); } .home-hero h1 { font-size: 2.1rem; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

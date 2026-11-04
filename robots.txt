@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sinergiesrl.github.io/sinergie-srl/sitemap.xml
