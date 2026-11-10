@@ -1,0 +1,15 @@
+# SINERGIE — PUBBLICAZIONE SU GITHUB PAGES GRATUITO
+
+Questo ZIP contiene solo i file necessari al sito pubblico, piu il workflow GitHub Pages.
+Non include CNAME: non configura alcun dominio personalizzato.
+La pagina Network rimane temporaneamente in aggiornamento; i profili dei professionisti non sono inclusi.
+
+1. Estrai questo ZIP sul computer.
+2. Apri il repository GitHub e carica nella radice del branch main tutti i file e le cartelle estratti (NON caricare lo ZIP come unico file). Assicurati di conservare anche la cartella nascosta .github/workflows/ e il file .nojekyll.
+3. Se nel repository e presente un vecchio file CNAME, ELIMINALO e fai commit. Rimuovi anche le vecchie cartelle profilo-* qualora fossero gia state pubblicate.
+4. In Settings > Pages, svuota Custom domain (se compilato). In Build and deployment scegli Source: GitHub Actions.
+5. Vai in Actions e verifica che il workflow 'Pubblica sito su GitHub Pages' sia verde. Se necessario avvialo con Run workflow.
+6. Il sito sara all'indirizzo https://NOMEUTENTE.github.io/NOMEREPOSITORY/ oppure https://NOMEUTENTE.github.io/ per un repository chiamato NOMEUTENTE.github.io.
+
+Nota: il modulo Parliamone apre o prepara un'email nel programma di posta dell'utente; non invia messaggi direttamente dal server.
+Nota privacy: verificare l'informativa prima di mettere il sito in produzione.

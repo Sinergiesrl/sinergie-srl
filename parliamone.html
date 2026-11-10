@@ -5,37 +5,43 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="#10263c" name="theme-color"/>
-<meta content="Contatta Sinergie S.r.l. a Roma per un primo confronto gratuito sui servizi aziendali." name="description"/>
+<meta content="Una necessità aziendale o personale? Prepara la tua richiesta e contatta Sinergie. Chiarezza sulle modalità di accesso e sugli incarichi." name="description"/>
 <meta content="index,follow" name="robots"/>
-<title>Parliamone | Richiedi un primo confronto | Sinergie S.r.l.</title>
-<link href="https://sinergiesrl.github.io/sinergie-srl/parliamone.html" rel="canonical"/>
+<title>Parliamone | Racconta la tua esigenza a Sinergie</title>
 <meta content="website" property="og:type"/>
 <meta content="it_IT" property="og:locale"/>
-<meta content="Contatti e primo confronto gratuito | Sinergie S.r.l." property="og:title"/>
-<meta content="Contatta Sinergie S.r.l. a Roma per un primo confronto gratuito sui servizi aziendali." property="og:description"/>
-<meta content="https://sinergiesrl.github.io/sinergie-srl/foto.jpg" property="og:image"/>
-<meta content="https://sinergiesrl.github.io/sinergie-srl/parliamone.html" property="og:url"/>
+<meta content="Parliamone | Racconta la tua esigenza a Sinergie" property="og:title"/>
+<meta content="Una necessità aziendale o personale? Prepara la tua richiesta e contatta Sinergie. Chiarezza sulle modalità di accesso e sugli incarichi." property="og:description"/>
 <link href="logo.jpg" rel="icon"/>
-<link href="sinergie-premium-2026.css" rel="stylesheet"/>
 <script defer="" src="sinergie-2026.js">
 </script>
 <meta content="light" name="color-scheme"/>
-<link href="sinergie-refinement.css" rel="stylesheet"/>
-<link href="aggiornamenti-layout.css" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="anonymous" href="https://fonts.gstatic.com" rel="preconnect"/>
-<script type="application/ld+json">
-   {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sinergiesrl.github.io/sinergie-srl/index.html"},{"@type":"ListItem","position":2,"name":"La tua prossima decisione parte da qui.","item":"https://sinergiesrl.github.io/sinergie-srl/contatti.html"}]}
-  </script>
+<style>
+/* Centratura dedicata alla pagina Parliamone, senza modificare le altre pagine */
+body.parliamone-centered .page-hero-in {max-width:1080px; margin-inline:auto;}
+body.parliamone-centered #richiesta > .container {max-width:1080px; margin-inline:auto;}
+body.parliamone-centered .contact-grid {grid-template-columns:minmax(0,1.25fr) minmax(0,.8fr); justify-content:center;}
+body.parliamone-centered .contact-panel, body.parliamone-centered .contact-aside {min-width:0;}
+@media (max-width:760px) {body.parliamone-centered .contact-grid {grid-template-columns:minmax(0,1fr);}}
+</style>
+<meta content="summary_large_image" name="twitter:card"/><style>/* Collegamenti diretti al modulo: titolo visibile sotto la navigazione, niente hero residua. */
+#modulo-contatto{scroll-margin-top:clamp(86px,9vw,112px)}
+@media(max-width:760px){#modulo-contatto{scroll-margin-top:18px}}
+</style>
+<link rel="stylesheet" href="sinergie-base.css">
+<link rel="stylesheet" href="stili/interni.css">
+<link href="sinergie-navigazione-fix.css" rel="stylesheet"/>
 </head>
-<body>
+<body class="parliamone-centered">
 <a class="skip" href="#contenuto">
    Vai al contenuto
   </a>
 <header class="header">
 <div class="container header-in">
 <a aria-label="Sinergie, homepage" class="logo" href="index.html">
-<img alt="Sinergie S.r.l." decoding="async" height="56" src="logo.jpg" width="185"/>
+<img alt="Sinergie S.r.l." decoding="async" height="56" loading="eager" src="logo.jpg" width="185"/>
 </a>
 <button aria-controls="main-nav" aria-expanded="false" class="nav-toggle" type="button">
      Menu
@@ -50,20 +56,21 @@
 <a href="chi-siamo.html">
       Chi siamo
      </a>
-<a href="servizi.html">
+<div class="nav-services"><a class="services-main" href="servizi.html">
       Servizi
-     </a>
+     </a><button aria-controls="services-submenu" aria-expanded="false" aria-label="Apri il menu dei servizi" class="services-toggle" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="m6 9 6 6 6-6"></path></svg></button><ul class="services-submenu" id="services-submenu"><li><a href="servizi.html">Tutti i servizi</a></li><li><a href="servizi.html#servizi-imprese">Imprese e professionisti</a></li><li><a href="servizi.html#servizi-privati">Persone e famiglie</a></li><li><a href="servizi.html#servizi-trasversali">Fisco e assistenza legale</a></li></ul></div>
+<a href="guide-e-consigli.html">Guide e consigli</a>
 <a href="network-professionale.html">
       Network
      </a>
-<a href="promozioni.html">
+<a href="come-lavoriamo.html">
       Come lavoriamo
      </a>
-<a aria-current="page" href="contatti.html">
+<a href="contatti.html">
       Contatti
      </a>
 </nav>
-<a aria-current="page" class="header-cta" href="parliamone.html#richiesta">
+<a aria-current="page" aria-label="Parliamone, pagina corrente" class="header-cta" href="parliamone.html">
      Parliamone
      <span aria-hidden="true">
       ↗
@@ -76,90 +83,58 @@
 <div class="container page-hero-in">
 <div>
 <span class="eyebrow">PARLIAMONE</span>
-<h1>Parliamo della tua impresa.</h1>
-<p class="lead">Raccontaci le esigenze della tua impresa: prepariamo insieme un primo confronto conoscitivo, gratuito e senza obbligo di incarico.</p>
-<a class="button" href="#richiesta">
+<h1>Raccontaci la tua esigenza. Individuiamo il prossimo passo.</h1>
+<p class="lead">Che si tratti della tua impresa, di una scelta personale o di una questione familiare, raccontaci in breve il contesto. Ti indicheremo come avviare un primo confronto e quali competenze possono essere pertinenti.</p>
+<a class="button" href="#modulo-contatto">
        Parla con Sinergie
        <span aria-hidden="true">
         ↗
        </span>
 </a>
 </div>
-<img alt="" decoding="async" loading="lazy" src="foto-contatti.jpg"/>
+<img alt="" decoding="async" height="653" loading="lazy" src="foto-contatti.webp" width="1188"/>
 </div>
 </section>
 <section class="section" id="richiesta">
-<div class="container contact-grid">
+<div class="container contact-grid" id="modulo-contatto">
 <div class="contact-panel">
 <span class="eyebrow">
        SCRIVICI
       </span>
-<h2>Raccontaci di cosa hai bisogno.</h2>
-<p>
-       Seleziona un’area e descrivi brevemente il contesto. Il pulsante apre la tua applicazione email: nessun dato viene inviato dal sito.
-      </p>
-<form id="contact-form">
-<label for="service">
-        Area di interesse
-       </label>
-<select id="service" name="service">
-<option>
-         Fractional Management
-        </option>
-<option>
-         Contabilità e dati per le paghe
-        </option>
-<option>
-         Budget e costo del personale
-        </option>
-<option>
-         Relazioni industriali
-        </option>
-<option>
-         Orientamento a competenze legali
-        </option>
-<option>
-         Orientamento alla mediazione
-        </option>
-<option>
-         Richiesta generale
-        </option>
-</select>
-<label for="message">
-        La tua esigenza (facoltativo)
-       </label>
-<textarea id="message" maxlength="1200" placeholder="Es. Vorrei organizzare meglio i flussi contabili e la reportistica mensile." rows="5"></textarea>
+<h2>Di cosa hai bisogno? Partiamo da qui.</h2>
+<p>Seleziona un argomento e scrivi poche righe. Il pulsante apre il programma email del tuo dispositivo con il messaggio già composto; prima dell’invio puoi rileggerlo e modificarlo.</p>
+<p class="form-explainer">Non sai da dove iniziare? Seleziona <strong>Richiesta generale</strong>. Il primo contatto non comporta l’avvio di un incarico.</p><noscript><p class="form-explainer">Per preparare l’email guidata occorre attivare JavaScript. In alternativa, scrivi direttamente a <a href="mailto:info@sinergie2srl.it">info@sinergie2srl.it</a>.</p></noscript><div class="premium-contact-info"><strong>Prima di scriverci</strong><p>Indica soltanto l’argomento e una breve descrizione. Non servono documenti o informazioni riservate. Il pulsante prepara un’email: l’invio avviene soltanto dal tuo programma di posta.</p><p><a href="tel:+390677590895">Preferisci chiamare? 06 7759 0895</a></p></div><form id="contact-form">
+<label for="service">Qual è l’argomento?</label>
+<select id="service" name="service"><option value="Richiesta generale">Richiesta generale</option><option value="Consulenza aziendale e amministrativa">Consulenza aziendale e amministrativa</option><option value="Fractional Management">Fractional Management</option><option value="Contabilità e dati per le paghe">Contabilità e dati per le paghe</option><option value="Budget e costo del personale">Budget e costo del personale</option><option value="Relazioni industriali">Relazioni industriali</option><option value="Conciliazioni di lavoro">Conciliazioni di lavoro</option><option value="Gare e appalti pubblici">Gare e appalti pubblici</option><option value="Mediazione civile e commerciale">Mediazione civile e commerciale</option><option value="Successioni">Successioni</option><option value="Contratti di locazione">Contratti di locazione</option><option value="Servizi previdenziali e pensionistici">Servizi previdenziali e pensionistici</option><option value="Consulenza fiscale e tributaria">Consulenza fiscale e tributaria</option><option value="Servizi legali">Servizi legali</option><option value="Sicurezza sul lavoro">Sicurezza sul lavoro</option><option value="Collaborazione professionale">Collaborazione professionale</option></select>
+<label for="message">Descrivici brevemente la situazione (facoltativo)</label>
+<textarea id="message" maxlength="1200" placeholder="Esempio: gestisco una piccola impresa e vorrei comprendere a chi rivolgermi per organizzare la gestione del personale." rows="5"></textarea>
 <p class="small">
         Non inserire dati sanitari, giudiziari, credenziali o documenti riservati.
        </p>
 <label class="checkbox-label">
-<input id="privacy-check" required="" type="checkbox"/>
+<input id="privacy-check" type="checkbox"/>
         Ho letto l’
         <a href="privacy.html" rel="noopener" target="_blank">
          informativa privacy
         </a>
         .
-       </label>
+       </label><p class="small privacy-explainer">La presa visione non equivale al consenso a comunicazioni promozionali. I dati saranno trattati secondo l’informativa e solo dopo l’invio dell’email.</p>
 <p class="error" hidden="" id="contact-error" role="alert">
         Conferma di aver letto l’informativa privacy.
        </p>
-<button class="button" type="submit">
-        Prepara l’email ↗
-       </button>
+<div class="contact-actions"><button class="button" type="submit">Apri il messaggio email ↗</button><button aria-describedby="contact-copy-status" class="copy-contact-button" id="copy-contact" type="button">Copia il testo della richiesta</button></div><p aria-live="polite" class="contact-copy-status small" id="contact-copy-status" role="status">La richiesta non è stata inviata. Puoi aprire il tuo programma email oppure copiare il testo.</p><p class="form-alternative">Se l’app email non si apre, copia il testo della richiesta e incollalo in un messaggio indirizzato a <a href="mailto:info@sinergie2srl.it">info@sinergie2srl.it</a> oppure telefona al <a href="tel:+390677590895">06 7759 0895</a>.</p>
 </form>
 </div>
 <aside class="contact-aside">
 <span class="eyebrow">
        RECAPITI DIRETTI
       </span>
-<h2>
-       Preferisci parlare con noi?
-      </h2>
+<h2>Preferisci un contatto diretto?</h2>
 <a class="contact-detail" href="tel:+390677590895">
        ☎ 06 7759 0895
       </a>
-<a class="contact-detail" href="mailto:sinergie2srl@gmail.com">
-       ✉ sinergie2srl@gmail.com
+<a class="contact-detail" href="mailto:info@sinergie2srl.it">
+       ✉ info@sinergie2srl.it
       </a>
 <h3>
        Sede legale
@@ -186,9 +161,7 @@
 <strong>
        SINERGIE S.R.L.
       </strong>
-<p>
-       Consulenza direzionale, organizzazione e servizi alle imprese.
-      </p>
+<p>Consulenza organizzativa e coordinamento di competenze professionali per imprese, persone e famiglie.</p>
 <p>
        Viale Carlo Felice 101, 00185 Roma (RM)
       </p>
@@ -211,7 +184,7 @@
        </a>
 </p>
 <p>
-<a href="contatti.html">
+<a href="guide-e-consigli.html">Guide e consigli</a> · <a href="contatti.html">
         Contatti
        </a>
        ·
@@ -234,8 +207,8 @@
        </a>
 </p>
 <p>
-<a href="mailto:sinergie2srl@gmail.com">
-        sinergie2srl@gmail.com
+<a href="mailto:info@sinergie2srl.it">
+        info@sinergie2srl.it
        </a>
 </p>
 </div>
@@ -251,5 +224,5 @@
     </div>
 </div>
 </footer>
-</body>
+<script defer="" src="sinergie-navigazione-responsive.js"></script><script defer="" src="sinergie-elite-navigation.js"></script></body>
 </html>
