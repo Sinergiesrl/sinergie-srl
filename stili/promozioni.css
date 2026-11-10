@@ -1,0 +1,152 @@
+/* === elite-80a74cc914b7.css === */
+/* Source: sinergie-eccellenza.css */
+/* Sinergie | revisione UX, contrasto e lettura. Nessun font, cookie o risorsa aggiuntiva. */
+:root{--sx-ink:#10283b;--sx-border:#d8e2e7;--sx-gold:#bd8c39}
+html{scroll-behavior:smooth;scroll-padding-top:112px}
+body{font-synthesis:none;-webkit-font-smoothing:antialiased}
+:where(a,button,input,textarea,select,summary):focus-visible{outline:3px solid #ba832b!important;outline-offset:4px!important;border-radius:4px}
+:where(button,a){touch-action:manipulation}
+:where(p,li){overflow-wrap:break-word}
+:where(h1,h2,h3){overflow-wrap:break-word!important}
+.section-head h2{line-height:1.22}
+.section-head p,.page-hero .lead{max-width:760px;line-height:1.75}
+.integrated-card,.network-person,.audience-card{height:100%}
+.integrated-services .integrated-card:focus-within,.audience-card:focus-visible{outline:3px solid #ba832b;outline-offset:3px}
+.integrated-card a{min-height:44px;display:inline-flex;align-items:center}
+.footer a{display:inline-block;min-height:25px}
+.page-hero .hero-buttons{flex-wrap:wrap;gap:12px}
+.page-hero .hero-buttons .button{min-height:48px}
+.concrete-journey{background:#fff}
+.concrete-journey .section-head{margin-bottom:30px}
+.journey-bar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin-bottom:30px}
+.journey-bar>div{padding:28px;border:1px solid var(--sx-border);border-top:4px solid #c49952;border-radius:15px;background:#f7fafb}
+.journey-bar strong{font-size:1.05rem;color:var(--sx-ink)}
+.journey-bar p{margin:12px 0 0;line-height:1.7;color:#425969}
+.form-alternative{font-size:.9rem;line-height:1.65;color:#405766;margin:15px 0 0}
+.form-alternative a{text-underline-offset:3px}
+#richiesta{scroll-margin-top:112px}
+@media (max-width:900px){.journey-bar{grid-template-columns:1fr}.journey-bar>div{padding:22px}}
+@media(max-width:760px){html{scroll-padding-top:86px}.home-hero .home-hero-in{padding-top:65px;padding-bottom:75px}.section{padding-block:60px}.integrated-services .integrated-grid{grid-template-columns:1fr}.hero-buttons .button{width:100%;justify-content:center}.page-hero .hero-buttons{align-items:stretch}.page-hero .hero-buttons .button{width:100%}.journey-bar{gap:12px}.contact-grid{grid-template-columns:minmax(0,1fr)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+@media print{.header,.header-cta,.nav-toggle,.cta{display:none!important}.section{padding:20px 0}.container{max-width:none!important}a{color:inherit!important}}
+
+
+/* Source: sinergie-navigazione-responsive.css */
+/* SINERGIE · NAVIGAZIONE RESPONSIVE V2 | 2026-11-08 */
+:root{--sx-nav-bg:#fff;--sx-nav-ink:#20364a;--sx-nav-accent:#94651e}
+html{scroll-padding-top:clamp(78px,8vw,112px)}
+#contenuto, main{min-width:0}
+.container{margin-inline:auto}
+.header nav#main-nav{align-items:center}
+.header nav#main-nav .nav-services{position:relative;display:flex;align-items:center;gap:0;min-width:0}
+.header nav#main-nav .nav-services>.services-main{padding-right:4px}
+.header nav#main-nav .services-toggle{display:inline-flex;align-items:center;justify-content:center;width:30px;min-width:30px;height:36px;border:0;border-radius:6px;background:transparent;color:var(--sx-nav-ink);cursor:pointer;font:inherit;box-shadow:none!important;transform:none!important}
+.header nav#main-nav .services-toggle:hover,.header nav#main-nav .services-toggle[aria-expanded=true]{background:#f4ebdf;color:var(--sx-nav-accent)}
+.header nav#main-nav .services-toggle svg{height:17px;width:17px;transition:transform .16s}
+.header nav#main-nav .services-toggle[aria-expanded=true] svg{transform:rotate(180deg)}
+.header nav#main-nav .services-submenu{display:none;position:absolute;inset-inline-start:0;top:calc(100% + 11px);width:min(325px,90vw);margin:0;padding:10px;list-style:none;background:#fff;border:1px solid #dce4e8;border-radius:12px;box-shadow:0 16px 35px #10263826;z-index:60}
+.header nav#main-nav .nav-services.is-open .services-submenu{display:grid;gap:3px}
+.header nav#main-nav .services-submenu a{display:block;padding:11px 12px;font-size:.92rem;line-height:1.35;white-space:normal;border-radius:7px;color:var(--sx-nav-ink)!important;text-decoration:none}
+.header nav#main-nav .services-submenu a:hover,.header nav#main-nav .services-submenu a:focus-visible{background:#f3f6f7;color:#7c531a!important}
+.header nav#main-nav .services-submenu::before{content:'';position:absolute;top:-13px;left:0;width:100%;height:13px}
+.page-return-bar{padding:13px 0;background:#fff;border-bottom:1px solid #e7ecef}
+.page-return-bar .container{display:flex;align-items:center;justify-content:flex-start;gap:16px;flex-wrap:wrap}
+.page-return-link,.section-return-link{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-weight:750;font-size:.91rem;color:#29465b;min-height:39px;padding:6px 10px;border:1px solid #d8e1e6;border-radius:8px;background:#f8fafb}
+.page-return-link:hover,.section-return-link:hover{color:#79531e;background:#f8f1e6;border-color:#d9bd8b}
+.section-return-wrap{text-align:center;margin:26px 0 0}
+.section-return-link{background:white}
+#servizi-inizio,#servizi-imprese,#servizi-privati,#servizi-trasversali,#richiesta{scroll-margin-top:clamp(86px,9vw,122px)}
+:where(.page-return-link,.section-return-link,.services-toggle,.services-submenu a):focus-visible{outline:3px solid #b78638;outline-offset:3px}
+@media(max-width:760px){
+ .header nav#main-nav{align-items:stretch;gap:7px}
+ .header nav#main-nav .nav-services{display:grid;grid-template-columns:minmax(0,1fr) 40px;width:100%}
+ .header nav#main-nav .services-toggle{width:40px;height:42px;background:#f0f4f6}
+ .header nav#main-nav .services-submenu{position:static;grid-column:1/-1;width:100%;padding:5px 0 5px 12px;margin-top:3px;border:0;border-left:3px solid #d9b16b;border-radius:0;box-shadow:none;background:#f8fafb}
+ .header nav#main-nav .services-submenu::before{display:none}
+ .header nav#main-nav .services-submenu a{padding:12px 14px;min-height:45px}
+ .page-return-bar{padding:8px 0}
+}
+@media(prefers-reduced-motion:reduce){.header nav#main-nav .services-toggle svg{transition:none}}
+
+
+/* Source: sinergie-ancore-centrate.css */
+/* SINERGIE - allineamento ancore e sezioni 2026-11-08
+   Un solo offset per la navigazione fissa; niente doppi scroll-margin.
+   Gli ID servizi sono applicati alle sezioni anziche ai titoli interni.
+*/
+:root{--sinergie-anchor-offset:92px}
+html{scroll-padding-top:var(--sinergie-anchor-offset)!important}
+#servizi-inizio,#servizi-imprese,#servizi-privati,#servizi-trasversali,
+#richiesta,#modulo-contatto{scroll-margin-top:0!important}
+/* Evita sovrapposizioni e conserva la larghezza visiva del sito. */
+#servizi-imprese,#servizi-privati,#servizi-trasversali{position:relative}
+#servizi-imprese>.container,#servizi-privati>.container,#servizi-trasversali>.container{width:100%;margin-inline:auto}
+@media(max-width:760px){:root{--sinergie-anchor-offset:78px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}}
+
+
+
+/* SINERGIE · SUPER PREMIUM ELITE | sistema di rifinitura e accessibilita */
+:root{--elite-navy:#10263c;--elite-gold:#c59a58;--elite-stroke:#d9e1e5;--elite-header:92px;--elite-content:1180px}
+html{scroll-behavior:smooth;scroll-padding-top:0!important}
+*,*::before,*::after{box-sizing:border-box}
+body{min-width:0;overflow-x:clip}
+.container,.wrap{max-width:var(--elite-content);margin-inline:auto}
+:where(img,svg,video){max-width:100%}
+:where(h1,h2,h3,p){overflow-wrap:break-word}
+:where(a,button,input,textarea,select):focus-visible{outline:3px solid #b4833f!important;outline-offset:4px}
+button,input,textarea,select{font:inherit}
+.page-hero,.home-hero,.personal-hero{isolation:isolate}
+.integrated-services>.container{margin-inline:auto;width:min(var(--elite-content),calc(100% - 36px))}
+.integrated-services>.container>.section-head{max-width:850px}
+.page-return-bar{position:relative;z-index:2}
+:where(#servizi-imprese,#servizi-privati,#servizi-trasversali,#modulo-contatto,#richiesta){scroll-margin-top:0!important}
+:where(#servizi-imprese,#servizi-privati,#servizi-trasversali)>.container{position:relative}
+.services-submenu{z-index:80}
+:where(.card,.service-link,.elite-condition-card,.contact-panel,.contact-aside){min-width:0}
+:where(.service-link,.card,.network-card,.profile-card){overflow-wrap:anywhere}
+/* Coerenza visuale: tipografia, spazi e pulsanti navigabili con pollice */
+:where(.button,.header-cta,.page-return-link,.services-toggle){min-height:44px}
+:where(.button,.header-cta){display:inline-flex;align-items:center;justify-content:center;text-align:center}
+:where(.card,.service-link){transition:box-shadow .2s ease,transform .2s ease}
+@media(max-width:760px){:root{--elite-header:78px}.section{padding-top:clamp(45px,8vw,70px);padding-bottom:clamp(45px,8vw,70px)}.integrated-services>.container{width:calc(100% - 30px)}.header-in{min-width:0}.page-hero{padding-block:clamp(45px,8vw,75px)}.page-hero h1,.home-hero h1{overflow-wrap:normal;word-break:normal}}
+@media(max-width:420px){:where(.button,.header-cta){max-width:100%}.container,.wrap{max-width:calc(100% - 28px)}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+/* === sinergie-rifiniture.css === */
+/* SINERGIE | Rifiniture condivise, novembre 2026.
+   In questo file solo regole trasversali: colori e impaginazione originali preservati. */
+:root { --sinergie-tap-target: 44px; }
+:where(a,button,input,select,textarea):focus-visible { outline: 3px solid #ae7b35; outline-offset: 3px; }
+:where(button,input,select,textarea) { font: inherit; }
+:where(img,video,svg) { max-width: 100%; }
+:where(p,h1,h2,h3) { overflow-wrap: break-word; }
+:where(.button,.header-cta,.page-return-link,.services-toggle,.nav-toggle) { min-height: var(--sinergie-tap-target); }
+:where(.contact-panel,.contact-aside,.service-link,.card,.network-card,.profile-card) { min-width: 0; }
+.contact-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; margin-block: 16px 8px; }
+.contact-actions .button { max-width: 100%; }
+.copy-contact-button { border: 1px solid #b58b50; background: transparent; color: #10263c; border-radius: 8px; padding: 11px 18px; min-height: 44px; font-weight: 600; cursor: pointer; }
+.copy-contact-button:hover { background: #f5efe5; }
+.copy-contact-button:disabled { opacity: .65; cursor: not-allowed; }
+.contact-copy-status { margin-block: 8px; font-size: .95rem; }
+@media (max-width: 760px) {
+  .contact-actions { flex-direction: column; align-items: stretch; }
+  .contact-actions > :where(button,.button) { width: 100%; justify-content: center; }
+  .contact-panel :where(select,textarea,input:not([type=checkbox])) { max-width: 100%; }
+}
+@media (prefers-reduced-motion: reduce) { *,*::before,*::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
+/* === sinergie-premium-2026.css === */
+/* Sinergie Premium 2026: rifiniture non invasive e orientamento ai contatti */
+:root{--premium-navy:#10263c;--premium-ink:#152c40;--premium-gold:#c59a58;--premium-cream:#faf8f4}
+html{scroll-behavior:smooth}a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,select:focus-visible{outline:3px solid #bc8b40;outline-offset:3px}
+.home-hero{background:linear-gradient(90deg,rgba(11,31,49,.94) 0%,rgba(11,31,49,.86) 35%,rgba(11,31,49,.42) 67%,rgba(11,31,49,.08) 100%),url('../hero-premium-sinergie.webp') center center/cover no-repeat!important}
+.home-hero .home-hero-in{max-width:1200px}.home-hero h1{max-width:800px;letter-spacing:-.033em}.home-hero .home-hero-in>p:not(.hero-reassurance){max-width:670px!important}
+.hero-buttons .button-primary-premium,.button-primary-premium{background:#c59a58!important;border-color:#c59a58!important;color:#10263c!important;font-weight:700!important;box-shadow:0 10px 22px rgba(0,0,0,.12)}
+.button-primary-premium:hover{background:#e0b777!important;border-color:#e0b777!important;transform:translateY(-2px)}
+.premium-needs{background:var(--premium-cream)}.premium-needs-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;margin-top:30px}.premium-need{background:#fff;padding:clamp(24px,3vw,38px);border:1px solid #e7e3da;border-radius:17px;box-shadow:0 16px 35px rgba(21,40,59,.045);display:flex;flex-direction:column;gap:13px}.premium-need-index{font-size:.73rem;letter-spacing:.12em;color:#8a6835;font-weight:800}.premium-need h3{margin:0;color:var(--premium-ink);font-size:clamp(1.15rem,1.7vw,1.45rem);line-height:1.33}.premium-need p{margin:0 0 9px;color:#4a5a64;flex:1}.premium-need a{color:#81581e;font-weight:750;text-underline-offset:4px}.premium-need:hover{border-color:#d2b884;box-shadow:0 19px 46px rgba(21,40,59,.09)}
+.premium-service-guide{margin-top:22px;margin-bottom:18px;padding:24px 30px;background:#f8f6f1;border:1px solid #e5dfd4;border-radius:15px;display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}.premium-service-guide strong{color:#122a3c;font-size:1.1rem}.premium-service-guide p{margin:0;max-width:540px;flex:1}.premium-contact-info{background:#f8f6f1;padding:18px 22px;border-radius:13px;border-left:4px solid #c59a58;margin:16px 0}.premium-contact-info p{margin:8px 0}.privacy-explainer{margin:6px 0 14px;color:#4c5f6a}.privacy-summary{background:#f5f7f7;border:1px solid #dce5e7;border-left:4px solid #c59a58;padding:20px 24px;border-radius:11px;margin:16px 0 29px}.privacy-summary p{margin:8px 0 0}
+.audience-card,.service-card,.integrated-card{transition:box-shadow .2s,border-color .2s,transform .2s}.audience-card:hover,.service-card:hover,.integrated-card:hover{transform:translateY(-2px)}
+@media(max-width:900px){.premium-needs-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){.premium-needs-grid{grid-template-columns:1fr}.home-hero{background:linear-gradient(100deg,rgba(9,27,44,.91),rgba(9,27,44,.78)),url('../hero-premium-sinergie.webp') 65% center/cover no-repeat!important}.premium-service-guide{display:block}.premium-service-guide p{margin:10px 0 18px}.premium-service-guide .button{width:100%;justify-content:center}.premium-need{padding:24px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.audience-card,.premium-need,.button-primary-premium{transition:none!important;transform:none!important}}

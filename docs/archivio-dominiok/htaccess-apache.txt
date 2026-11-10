@@ -1,0 +1,9 @@
+# Sinergie S.r.l. — dominio canonico e HTTPS (Apache / DominiOk)
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.sinergie2srl\.it$ [NC]
+RewriteRule ^ https://www.sinergie2srl.it%{REQUEST_URI} [R=301,L,NE]
+</IfModule>
+
+Options -Indexes
