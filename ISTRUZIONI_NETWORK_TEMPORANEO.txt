@@ -1,0 +1,9 @@
+SINERGIE SRL - NETWORK TEMPORANEAMENTE IN AGGIORNAMENTO
+
+La voce Network resta visibile nella navigazione. La sua pagina contiene un messaggio professionale e tre pulsanti funzionanti: Parliamone, Scopri i servizi, Torna alla Home.
+
+Le schede dei singoli professionisti non sono più collegate dalla pagina Network e non vengono incluse nella pubblicazione GitHub Pages dal workflow .github/workflows/pages.yml. Le cartelle profilo-* restano nello ZIP come sorgenti per un eventuale ripristino successivo.
+
+ATTENZIONE: prima di ricaricare i file nel repository, elimina dal repository le eventuali vecchie cartelle profilo-* già pubblicate se desideri che non siano più consultabili nel codice pubblico. Il workflow aggiornato le esclude dal sito pubblicato anche se restano nel repository. GitHub Pages non offre controllo accessi o vera riservatezza: non caricare informazioni riservate in repository pubblici.
+
+Per attivare GitHub Pages: Settings > Pages > Source GitHub Actions; rimuovi l'eventuale Custom domain e il vecchio CNAME. Carica il CONTENUTO estratto dallo ZIP nella radice del repository (non il file ZIP). Verifica Actions > Pubblica sito su GitHub Pages.

@@ -369,3 +369,11 @@ html{scroll-behavior:smooth}a:focus-visible,button:focus-visible,input:focus-vis
 @media(max-width:900px){.premium-needs-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:650px){.premium-needs-grid{grid-template-columns:1fr}.home-hero{background:linear-gradient(100deg,rgba(9,27,44,.91),rgba(9,27,44,.78)),url('../hero-premium-sinergie.webp') 65% center/cover no-repeat!important}.premium-service-guide{display:block}.premium-service-guide p{margin:10px 0 18px}.premium-service-guide .button{width:100%;justify-content:center}.premium-need{padding:24px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.audience-card,.premium-need,.button-primary-premium{transition:none!important;transform:none!important}}
+
+/* Correzione contrasto: titolo della card fotografica nella sezione La visione di Sinergie.
+   La regola è circoscritta alla pagina Chi siamo e non modifica i titoli generali. */
+.chi-siamo-elite .vision-section .quote-panel h3 {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  text-shadow: 0 2px 8px rgba(0, 12, 24, .85);
+}

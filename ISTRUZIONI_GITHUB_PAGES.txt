@@ -1,0 +1,15 @@
+SINERGIE - VERSIONE GITHUB PAGES (senza dominio personalizzato)
+
+1. Apri il repository GitHub che ospita il sito.
+2. Carica i contenuti di QUESTO ZIP nella RADICE del repository (non caricare lo ZIP come singolo file).
+3. Quando sostituisci i file, ELIMINA anche il vecchio file CNAME dal repository se presente: non basta caricare lo ZIP aggiornato, perche GitHub non elimina automaticamente i file precedenti.
+4. Apri Settings > Pages. In Custom domain cancella www.sinergie2srl.it (se compare) e premi Save.
+5. In Build and deployment > Source seleziona GitHub Actions.
+6. In Actions avvia il workflow 'Pubblica sito su GitHub Pages' se non parte automaticamente.
+7. Indirizzo finale tipico: https://NOME-UTENTE.github.io/NOME-REPOSITORY/
+   Se il repository si chiama NOME-UTENTE.github.io, l'indirizzo e https://NOME-UTENTE.github.io/
+
+NOTE: la pubblicazione automatica e impostata per il ramo main. Se il ramo principale e master, rinominalo in main o modifica il workflow.
+I collegamenti interni sono relativi, perciò funzionano anche con un repository di progetto.
+Sono stati rimossi i metadati SEO che puntavano al dominio precedente e la vecchia sitemap. Quando saprai l'URL GitHub definitivo potrai creare nuovi canonical e sitemap coerenti.
+La grafica, i testi e i contatti email non sono stati modificati.

@@ -1,0 +1,78 @@
+/* Sinergie — cornici uniformi per tutti i profili del Network, 10 novembre 2026.
+   Caricato dopo gli stili esistenti per neutralizzare le differenti regole storiche. */
+.personal-hero {
+  min-height: 0 !important;
+  height: auto !important;
+  padding-block: clamp(42px, 5.5vw, 76px) !important;
+}
+.personal-hero > .container.hero-layout,
+.personal-hero .hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 330px) !important;
+  gap: clamp(28px, 4.5vw, 68px) !important;
+  align-items: center !important;
+}
+.personal-hero .portrait-wrap,
+.personal-hero .portrait-wrap.serena-portrait-frame {
+  width: 100% !important;
+  max-width: 330px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  align-self: center !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  aspect-ratio: auto !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+.personal-hero .portrait-wrap .portrait,
+.personal-hero .portrait-wrap.serena-portrait-frame .portrait,
+.personal-hero .portrait-wrap .portrait-monogram {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  max-width: 310px !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: 6 / 7 !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  border-radius: 18px !important;
+  object-fit: cover !important;
+  object-position: center 22% !important;
+  overflow: hidden !important;
+  box-shadow: 0 18px 42px rgba(0,0,0,.19) !important;
+}
+.personal-hero .portrait-wrap .portrait-monogram {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: clamp(4.3rem, 8vw, 7.25rem) !important;
+  border: 1px solid rgba(255,255,255,.22) !important;
+}
+@media (max-width: 760px) {
+  .personal-hero { padding-block: 30px 44px !important; }
+  .personal-hero > .container.hero-layout,
+  .personal-hero .hero-layout {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 22px !important;
+  }
+  .personal-hero .portrait-wrap,
+  .personal-hero .portrait-wrap.serena-portrait-frame {
+    grid-row: 1 !important;
+    max-width: 245px !important;
+  }
+  .personal-hero .hero-copy { grid-row: 2 !important; }
+  .personal-hero .portrait-wrap .portrait,
+  .personal-hero .portrait-wrap.serena-portrait-frame .portrait,
+  .personal-hero .portrait-wrap .portrait-monogram {
+    width: min(62vw, 245px) !important;
+    max-width: 245px !important;
+    aspect-ratio: 6 / 7 !important;
+  }
+}
