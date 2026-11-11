@@ -1,0 +1,17 @@
+SINERGIE — PACCHETTO RIPULITO PER GITHUB PAGES GRATUITO
+
+1. Estrai questo ZIP: non caricare il file ZIP tal quale su GitHub.
+2. Carica tutti i file e le cartelle nella RADICE del repository pubblico, inclusi .github/workflows/pages.yml e .nojekyll.
+3. Se sostituisci un sito esistente, ELIMINA dal repository eventuali vecchi file CNAME e le vecchie cartelle profilo-* (GitHub non li cancella automaticamente).
+4. Usa il branch main. Su GitHub apri Settings > Pages > Build and deployment e seleziona GitHub Actions.
+5. Rimuovi un eventuale dominio in Settings > Pages > Custom domain se vuoi usare solo github.io.
+6. Controlla in Actions che il workflow "Pubblica sito su GitHub Pages" termini correttamente.
+7. Apri il tuo indirizzo https://NOME-UTENTE.github.io/NOME-REPOSITORY/ (oppure https://NOME-UTENTE.github.io/ per repository NOME-UTENTE.github.io).
+
+NOTE
+- Le pagine sono statiche: non servono hosting o server a pagamento. Repository pubblico richiesto per GitHub Pages Free.
+- Il modulo contatti usa il programma di posta elettronica del visitatore; non invia email via server.
+- La pagina Network rimane temporaneamente in aggiornamento.
+- I vecchi riferimenti CSS a fotografie dei profili assenti sono stati rimossi.
+- Prima dell'apertura al pubblico verificare testi legali, privacy, recapiti e link esterni.
+- La verifica effettuata e' statica: non costituisce un test sul sito pubblicato online.

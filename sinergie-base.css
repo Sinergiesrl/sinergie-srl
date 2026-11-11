@@ -202,46 +202,22 @@ input,select,textarea{border-radius:8px}
 /* === sinergie-immagini-fix.css === */
 /* Correzione fotografie: network e Chi siamo */
 /* Ogni profilo ha una fotografia; le immagini non vengono coperte da una tinta uniforme */
-body:has(a[href="profilo-pietro-fazio/index.html"]) .link-grid .service-link{background-repeat:no-repeat!important;background-size:cover!important;min-height:310px!important;background-color:#243b4c!important}
-body:has(a[href="profilo-pietro-fazio/index.html"]) .link-grid .service-link::before{background:linear-gradient(180deg,rgba(7,24,37,.04) 0%,rgba(7,24,37,.13) 38%,rgba(7,24,37,.78) 74%,rgba(7,24,37,.94) 100%)!important}
-body:has(a[href="profilo-pietro-fazio/index.html"]) .link-grid .service-link:hover::before{background:linear-gradient(180deg,rgba(7,24,37,.02) 0%,rgba(7,24,37,.10) 38%,rgba(7,24,37,.72) 74%,rgba(7,24,37,.92) 100%)!important}
 body:has(a[href="profilo-pietro-fazio/index.html"]) .link-grid .service-link small,
 body:has(a[href="profilo-pietro-fazio/index.html"]) .link-grid .service-link strong,
-body:has(a[href="profilo-pietro-fazio/index.html"]) .link-grid .service-link span{position:relative;z-index:1;text-shadow:0 2px 6px #061827}
 /* Fotografia di Roma più riconoscibile; testo bianco su area scura dedicata */
 #governance .quote-panel{background-image:linear-gradient(90deg,rgba(5,22,35,.80) 0%,rgba(5,22,35,.60) 55%,rgba(5,22,35,.25) 100%),url('foto-chi-siamo.webp')!important;background-size:cover!important;background-position:center 43%!important;min-height:305px;box-shadow:0 16px 34px #0b263322}
 #governance .quote-panel h3,#governance .quote-panel p{color:#fff!important;opacity:1!important;text-shadow:0 2px 7px #041625}
 #governance .quote-panel h3{font-size:clamp(1.4rem,2.2vw,2rem)}
-@media(max-width:760px){body:has(a[href="profilo-pietro-fazio/index.html"]) .link-grid .service-link{min-height:290px!important}#governance .quote-panel{min-height:260px}}
+@media(max-width:760px){#governance .quote-panel{min-height:260px}}
 
 
 /* === network-fotografie.css === */
 /* Network: fotografie autentiche quando disponibili, immagini istituzionali in attesa */
-body.network-portraits .link-grid .service-link {min-height:355px!important;background-color:#213648!important;background-size:cover!important;background-repeat:no-repeat!important; background-position:center 28%!important;isolation:isolate;}
-body.network-portraits .link-grid .service-link::before {background:linear-gradient(180deg,rgba(5,20,34,.04) 0%,rgba(5,20,34,.09) 42%,rgba(5,20,34,.74) 74%,rgba(5,20,34,.95) 100%)!important;}
-body.network-portraits .link-grid .service-link:hover::before {background:linear-gradient(180deg,rgba(5,20,34,.02) 0%,rgba(5,20,34,.09) 42%,rgba(5,20,34,.70) 74%,rgba(5,20,34,.93) 100%)!important;}
-body.network-portraits .link-grid .service-link :is(small,strong,span,b){position:relative;z-index:1;color:#fff!important;text-shadow:0 2px 7px #071927;}
-body.network-portraits .link-grid .service-link small,body.network-portraits .link-grid .service-link b{color:#f4d18d!important;}
-body.network-portraits .link-grid .service-link[href="profilo-alessandra-fazio/index.html"]{background-image:url('profilo-alessandra-fazio/ritratto.jpg')!important;}
-body.network-portraits .link-grid .service-link[href="profilo-giuseppe-bianco/index.html"]{background-image:url('profilo-giuseppe-bianco/ritratto.jpg')!important;}
-body.network-portraits .link-grid .service-link[href="profilo-ilaria-cavallin/index.html"]{background-image:url('profilo-ilaria-cavallin/ritratto.jpg')!important;}
-body.network-portraits .link-grid .service-link[href="profilo-paolo-terrinoni/index.html"]{background-image:url('profilo-paolo-terrinoni/ritratto.jpg')!important;}
-body.network-portraits .link-grid .service-link[href="profilo-pietro-fazio/index.html"]{background-image:url('profilo-pietro-fazio/pietro-fazio.jpg')!important;}
-body.network-portraits .link-grid .service-link[href="profilo-serena-salvadori/index.html"]{background-image:url('profilo-serena-salvadori/ritratto.jpg')!important;}
-body.network-portraits .link-grid .service-link[href="profilo-arturo-rinaldi/index.html"]{background-image:url('profilo-arturo-rinaldi/foto-arturo-rinaldi.jpg')!important;}
-@media(max-width:760px){body.network-portraits .link-grid .service-link{min-height:330px!important;}}
+
 
 
 /* === network-correzioni-2026.css === */
 /* Correzione definitiva: ciascuna fotografia appartiene al proprio profilo. */
-body.network-portraits .link-grid > a.service-link[href="profilo-pietro-fazio/index.html"] {
-    background-image: url("profilo-pietro-fazio/pietro-fazio.jpg") !important;
-    background-position: center 25% !important;
-}
-body.network-portraits .link-grid > a.service-link[href="profilo-serena-salvadori/index.html"] {
-    background-image: url("profilo-serena-salvadori/ritratto.jpg") !important;
-    background-position: center 25% !important;
-}
 
 
 /* Rifiniture accessibilità e responsive: novembre 2026 */
@@ -249,12 +225,8 @@ body.network-portraits .link-grid > a.service-link[href="profilo-serena-salvador
 :focus-visible {outline:3px solid #d59c36!important;outline-offset:3px;}
 .header-cta,.button {transition:background-color .2s ease,box-shadow .2s ease,transform .2s ease;}
 .header-cta:active,.button:active {transform:translateY(1px);}
-body.network-portraits .link-grid .service-link {background-position:center 24%!important;}
-body.network-portraits .link-grid .service-link::before {background:linear-gradient(180deg,rgba(5,20,34,.03) 0%,rgba(5,20,34,.10) 36%,rgba(5,20,34,.83) 75%,rgba(5,20,34,.97) 100%)!important;}
-body.network-portraits .link-grid .service-link[href="profilo-serena-salvadori/index.html"] {background-image:url("profilo-serena-salvadori/ritratto.jpg")!important;}
-body.network-portraits .link-grid .service-link[href="profilo-pietro-fazio/index.html"] {background-image:url("profilo-pietro-fazio/pietro-fazio.jpg")!important;}
 @media (prefers-reduced-motion:reduce) {*,*::before,*::after {scroll-behavior:auto!important;transition-duration:.01ms!important;animation-duration:.01ms!important;}}
-@media(max-width:760px) {body.network-portraits .link-grid .service-link {min-height:320px!important;}}
+
 
 
 /* Source: sinergie-refinement.css */
@@ -276,9 +248,6 @@ img { max-width: 100%; }
 .section-head p, .split > div > p, .card p, .decision-grid p, .page-hero .lead { color: #344c5c; }
 .link-grid .service-link:before { background: linear-gradient(0deg,rgba(5,22,35,.94) 0%,rgba(5,22,35,.79) 47%,rgba(5,22,35,.13) 100%); }
 .link-grid .service-link strong, .link-grid .service-link span { color: #fff !important; }
-body.network-portraits .link-grid .service-link[href="profilo-serena-salvadori/index.html"] { background-image: url('profilo-serena-salvadori/ritratto.jpg') !important; }
-body.network-portraits .link-grid .service-link[href="profilo-pietro-fazio/index.html"] { background-image: url('profilo-pietro-fazio/pietro-fazio.jpg') !important; }
-body.network-portraits .link-grid .service-link:before { background: linear-gradient(0deg,rgba(5,22,35,.94) 0%,rgba(5,22,35,.70) 35%,rgba(5,22,35,.03) 78%) !important; }
 :where(a,button,input,select,textarea):focus-visible { outline: 3px solid #bd7b0d !important; outline-offset: 3px; }
 @media (max-width: 1050px) { .header nav a { font-size: .86rem; } }
 @media (max-width: 760px) {
