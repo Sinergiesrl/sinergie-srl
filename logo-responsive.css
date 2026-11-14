@@ -2,7 +2,7 @@
 /* Aggiornamento 14-11-2026: logo Sinergie proporzionato su PC, tablet e smartphone. */
 .header .logo { min-width:0; max-width:100%; }
 .header .logo img {
-  width:clamp(170px, 15.2vw, 226px);
+  width:clamp(185px, 17vw, 245px);
   max-width:100%; height:auto !important; max-height:none !important;
   aspect-ratio:4 / 1; object-fit:contain;
 }
