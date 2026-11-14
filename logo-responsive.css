@@ -10,9 +10,9 @@
   .header .logo img { width:clamp(145px, 18vw, 185px); }
 }
 @media (max-width:600px) {
-  .header .logo img { width:clamp(112px, 29vw, 148px); }
+  .header .logo img { width:clamp(130px, 36vw, 150px); }
 }
 @media (max-width:380px) {
   .header .header-in { gap:6px; }
-  .header .logo img { width:clamp(102px, 28vw, 116px); }
+  .header .logo img { width:clamp(120px, 34vw, 135px); }
 }
